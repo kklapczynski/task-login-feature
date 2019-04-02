@@ -1,0 +1,15 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "recruitment task",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch ./src/scss/ --output ./src/css/"
+  },
+  "author": "Krzysztof Klapczyński",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
