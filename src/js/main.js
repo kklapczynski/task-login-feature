@@ -14,6 +14,7 @@ const resetPassButton = document.getElementById('reset-pass-button');
 const forgottenPassword = document.getElementById('login-footer-text');
 const loginFooter = document.getElementsByClassName('login-footer')[0];
 const cancelButton = document.getElementById('cancel-reset-button');
+const loginModeOnlyElements = document.getElementsByClassName('login-mode-only')[0];
 
 
 
@@ -122,6 +123,7 @@ const switchToResetPassword = function() {
     // showEl([elToShow])
     headerText.classList.remove('hide');
     resetPassInfo.classList.remove('hide');
+    // loginModeOnlyElements.classList.add('hide');
     passwordContainer.classList.add('hide');
     rememberMeContainer.classList.add('hide');
     loginButton.classList.add('hide');
