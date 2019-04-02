@@ -32,11 +32,12 @@ LOGIN
 */
 
 .login-container {
-   width: 630px;
-   height: 490px;
+   width: 100%;
+   height: 100%;
    background-color: $background;
    display: flex;
    flex-flow: column nowrap;
+   justify-content: space-between;
    align-items: center;
 }
 
@@ -44,25 +45,24 @@ LOGIN
    display: flex;
    flex-flow: row nowrap;
    align-items: center;
-   // justify-content: space-around;
    width: 100%;
    height: 20%;
    background-color: $primary;
 }
 
 #header-img {
-   flex-basis: auto;
    margin: 0 10% 0 10%;
+   height: 90%;
 }
 
 #header-text {
    color: white;
-   font-size: xx-large;
+   font-size: large;
+   margin-right: 10%;
 }
 
 .login-form {
    width: 80%;
-   height: 60%;
    display: flex;
    flex-flow: column nowrap;
    align-items: flex-start;
@@ -73,12 +73,13 @@ LOGIN
    display: flex;
    flex-direction: column;
    width: 100%;
+   margin: 10px 0;
 }
 
 .form-info-text {
    color: $grey_darker;
    font-size: smaller;
-   width: 75%;
+   width: 100%;
 }
 /*
 LOGIN INPUTS: email and password
@@ -260,4 +261,25 @@ button[type=submit]:enabled {
 
 .hide {
    display: none;
+}
+
+@media screen and (min-width: 600px) {
+   .login-container {
+      width: 600px;
+      max-height: 80%;
+   }
+
+   #header-img {
+      margin: 0 10% 0 10%;
+      height: fit-content;
+   }
+
+   #header-text {
+     font-size: x-large;
+   }
+
+   .form-info-text {
+      width: 75%;
+   }
+
 }
