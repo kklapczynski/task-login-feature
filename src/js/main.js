@@ -1,3 +1,6 @@
+import '../scss/main.scss';
+require.context("../images/", true, /\.(png|svg|jpg|gif)$/);
+
 const form = document.getElementsByClassName('login-container')[0]
 const emailLabel = document.getElementById('email-label')
 const emailInput = document.getElementById('email')
