@@ -11,12 +11,12 @@
     <div class="login-container">
         <header>
             <img id="header-img" src="./images/user-image.png" alt="user image">
-            <h1 id="header-text" class="hide">RESET PASSWORD</h1>
+            <h1 class="header-text hide reset-password-mode">RESET PASSWORD</h1>
         </header>
         <main>
             <form novalidate >
                 <div class="form-spacer"></div>
-                <article id="reset-pass-info" class="form-item-container form-info-text hide">
+                <article class="form-item-container form-info-text hide reset-password-mode">
                     <p>Hey, it happens to everyone.<br>Just let us know what email address you use to login
                     and we'll send you an email with instructions.</p>
                 </article>
@@ -28,7 +28,7 @@
                         <span id="email-error-message" class="error error-color error-message" aria-live="polite"></span>
                     </div>
                 </div>
-                <div id="password-container" class="form-item-container">
+                <div class="form-item-container login-mode">
                     <label id="password-label" for="password">PASSWORD</label>
                     <div class="text-input-with-corner">
                         <p>*</p>
@@ -37,15 +37,15 @@
                         <span id="password-error-message" class="error error-color error-message" aria-live="polite"></span>
                     </div>
                 </div>
-                <div id="remember-me-container"class="form-item-container form-item-checkbox">
+                <div class="form-item-container form-item-checkbox login-mode">
                     <input type="checkbox" name="remember-me" id="remember-me">
                     <label for="remember-me">REMEMBER ME</label>
                 </div>
                 <div class="login-footer">
-                    <button type="button" id="cancel-reset-button" class="cancel login-footer-button hide">CANCEL</button>
-                    <a href="#" id="login-footer-text">Forgotten password?</a>
-                    <button disabled type="submit" id="login-button" class="login-footer-button">LOGIN</button>
-                    <button disabled type="submit" id="reset-pass-button" class="login-footer-button hide">RESET PASSWORD</button>
+                    <button type="button" id="cancel-reset-button" class="cancel login-footer-button hide reset-password-mode">CANCEL</button>
+                    <a href="#" id="login-footer-text" class="login-mode">Forgotten password?</a>
+                    <button disabled type="submit" id="login-button" class="login-footer-button login-mode">LOGIN</button>
+                    <button disabled type="submit" id="reset-pass-button" class="login-footer-button hide reset-password-mode">RESET PASSWORD</button>
                 </div>
             </form>
         </main>

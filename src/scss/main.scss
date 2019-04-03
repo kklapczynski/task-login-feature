@@ -28,6 +28,8 @@ body {
    align-items: center;
 }
 
+
+
 /*
 LOGIN
 */
@@ -50,12 +52,12 @@ header {
    background-color: $primary;
 }
 
-#header-img {
+header img {
    margin: 0 10% 0 10%;
    height: 90%;
 }
 
-#header-text {
+.header-text {
    color: white;
    font-size: large;
    margin-right: 10%;
@@ -114,10 +116,6 @@ label {
 
 // solution for triangle with asteriks in input field from:
 // https://stackoverflow.com/questions/47695198/css-input-corner-triangle-label-with-border-radius
-
-input:required {
-   border-color: $grey_lighter;
-}
 
 .text-input-with-corner {
    position: relative;
@@ -230,7 +228,7 @@ LOGIN FOOTER
    margin-top: 10px;
    background-color: $background_darker;
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: row wrap;
    align-items: center;
    justify-content: flex-end;
    border-top: 1px solid $grey_lighter;
@@ -288,12 +286,21 @@ a {
       height: fit-content;
    }
 
-   #header-text {
+   .header-text {
      font-size: x-large;
    }
 
    .form-info-text {
       width: 60%;
    }
+}
 
+@media screen and (max-width: 405px) {
+   .login-footer-button {
+      margin: 0;
+   }
+
+   .login-footer {
+      justify-content: space-evenly;
+   }
 }

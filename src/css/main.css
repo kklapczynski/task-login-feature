@@ -35,11 +35,11 @@ header {
   height: 20%;
   background-color: #0094bb; }
 
-#header-img {
+header img {
   margin: 0 10% 0 10%;
   height: 90%; }
 
-#header-text {
+.header-text {
   color: white;
   font-size: large;
   margin-right: 10%; }
@@ -87,9 +87,6 @@ label {
   border-radius: 5px;
   box-shadow: inset 0 0 4px 0px #acacac;
   font: inherit; }
-
-input:required {
-  border-color: #acacac; }
 
 .text-input-with-corner {
   position: relative;
@@ -182,7 +179,7 @@ LOGIN FOOTER
   margin-top: 10px;
   background-color: #e5e5e5;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: flex-end;
   border-top: 1px solid #acacac;
@@ -228,7 +225,13 @@ a {
   #header-img {
     margin: 0 10% 0 10%;
     height: fit-content; }
-  #header-text {
+  .header-text {
     font-size: x-large; }
   .form-info-text {
     width: 60%; } }
+
+@media screen and (max-width: 405px) {
+  .login-footer-button {
+    margin: 0; }
+  .login-footer {
+    justify-content: space-evenly; } }

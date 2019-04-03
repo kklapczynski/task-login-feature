@@ -4,11 +4,15 @@
   "description": "recruitment task",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --watch ./src/scss/ --output ./src/css/"
+    "sass": "node-sass --watch ./src/scss/ --output ./src/css/",
+    "js-check": "standard",
+    "js-fix": "standard --fix"
   },
   "author": "Krzysztof Klapczyński",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
   "dependencies": {
     "node-sass": "^4.11.0"
   }
